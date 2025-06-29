@@ -13,7 +13,6 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos((prev) => [{ id: Date.now(), ...todo }, ...prev]);
-
     //here we cant directly write setTodos(todo) bec all earlier values will be erased, then, hence we use prev variable
   };
 
